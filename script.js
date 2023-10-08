@@ -1,5 +1,5 @@
 // クリック要素を取得
-const target = document.getElementById('sasaki-chibi');
+const target = document.getElementById('sasaki');
 
 // クリックイベントリスナーを追加
 target.addEventListener('click', function () {
