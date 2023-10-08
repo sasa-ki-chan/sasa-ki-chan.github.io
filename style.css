@@ -25,11 +25,11 @@ img {
 /* スマートフォンやタブレット用のスタイル */
 @media (max-width: 768px) { /* 768px未満の場合に適用 */
     body {
-        font-size: 32px; /*フォントサイズを16pxに設定 */
+        font-size: 64px; /*フォントサイズを16pxに設定 */
     }
 
     h1 {
-        font-size: 48px; /*見出しのフォントサイズを24pxに設定 */
+        font-size: 128px; /*見出しのフォントサイズを24pxに設定 */
     }
 
     /* p {
@@ -38,7 +38,7 @@ img {
 
 
     .image-container {
-        max-width: 85%;
+        max-width: 100%;
         margin: auto; /* 水平方向に中央に配置 */
         display: block;
     }
