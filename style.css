@@ -2,6 +2,9 @@
 html, body, div, img {
     margin: 0;
     padding: 0;
+}
+
+.centralize {
     text-align:center;
 }
 
