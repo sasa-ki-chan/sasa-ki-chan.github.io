@@ -76,7 +76,7 @@ img {
 /* 各リンク */
 .links-container a {
     text-decoration: none; /* リンクの下線を非表示 */
-    text-decoration-color: black;
+    color: black;
     margin: 20px; /* リンクの間隔を設定 */
     padding: 10px 20px; /* リンクのパディングを設定 */
     border: 1px solid #000; /* ボーダーを追加 */
