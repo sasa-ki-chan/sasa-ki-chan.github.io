@@ -51,6 +51,7 @@ img {
     .links-container {
         flex-direction: column; /* 縦並びに変更 */
         align-items: center; /* 中央に配置 */
+        text-size-adjust:auto ;
     }
 }
 
@@ -75,13 +76,32 @@ img {
 /* 各リンク */
 .links-container a {
     text-decoration: none; /* リンクの下線を非表示 */
-    margin: 10px; /* リンクの間隔を設定 */
+    text-decoration-color: black;
+    margin: 20px; /* リンクの間隔を設定 */
     padding: 10px 20px; /* リンクのパディングを設定 */
     border: 1px solid #000; /* ボーダーを追加 */
-    transition: transform 0.3s; /* ホバー時のアニメーションを設定 */
+    position: relative;
 }
 
 /* リンクホバー時のエフェクト */
-.links-container a:hover {
-    transform: scale(1.05); /* カーソルを合わせた際に拡大エフェクト */
+@keyframes vibrate {
+    0% {
+        transform: translate(0);
+    }
+
+    25% {
+        transform: translate(-2px, -2px);
+    }
+
+    50% {
+        transform: translate(2px, 2px);
+    }
+
+    75% {
+        transform: translate(-2px, 2px);
+    }
+
+    100% {
+        transform: translate(2px, -2px);
+    }
 }
