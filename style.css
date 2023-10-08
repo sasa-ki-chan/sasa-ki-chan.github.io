@@ -4,35 +4,19 @@ html, body, div, img {
     padding: 0;
 }
 
-.centralize {
+.image-height {
     text-align:center;
+    height:500px
 }
 
 /* 画像コンテナ */
 .image-container {
-    text-align: center; /* 画像を中央に配置 */
-}
-
-/* 画像 */
-img {
-    max-width: 100%; /* 画像の幅を100%に設定 */
-    height: auto; /* アスペクト比を維持 */
-    display: block; /* 不要な空白を削除 */
-    margin: 0 auto; /* 水平方向に中央に配置 */
-    max-height: 100vh; /* 画像の高さをビューポートの高さに合わせる */
+    text-align: center; 
+    padding: 0px;
 }
 
 /* スマートフォン用のスタイル */
-@media (max-width: 599px) { 
-    body {
-        font-size: 24px; 
-        color: aquamarine;
-    }
-
-    h1 {
-        font-size: 64px; 
-    }
-
+@media (max-width: 599px) {
     .image-container {
         max-width: 100%;
         margin: auto; /* 水平方向に中央に配置 */
@@ -58,7 +42,7 @@ img {
 
 /* 他の要素のスタイルも調整 */
 .container {
-    padding: 10px; /* 例：コンテナ内の余白を調整 */
+    padding: 10px; 
 }
 
 /*リンク*/
@@ -84,8 +68,8 @@ img {
     animation: vibrate 0.2s ease infinite;
 }
 
-.rainbow-text {
-    animation: rainbowText 8s linear infinite; /* アニメーションの速さと無限ループ */
+.rainbowText {
+    animation: rainbowText 2s ease infinite; 
 }
 
 /* リンクホバー時のエフェクト */
@@ -145,28 +129,17 @@ img {
     }
 }
 
-#sasaki {
+.sasaki {
+    display: inline-block;
+    overflow: hidden;
     cursor: pointer;
-    transition: height 0.3s ease; /* アニメーションの設定 */
-}
-
-#sasaki :hover {
-    color:brown;
-    transition: color 0.3s ease;
+    transform-origin: center;
+    transition: transform .2s;
 }
 
 /* クリック時のスタイル */
-#sasaki.clicked {
-    height: 60px; /* 縦に60%縮小 */
-}
 
-.pinch {
-    width: 100%;
-    height: 100%;
-    background-color: lightblue;
-    transition: transform 1s ease; /* アニメーションの設定 */
-}
 
-#sasaki.clicked .pinch {
-    transform: scaleY(0.6); /* Y軸方向に0.6倍に縮小 */
+.sasaki.scale {
+    transform: scale(1,-0.01);
 }
