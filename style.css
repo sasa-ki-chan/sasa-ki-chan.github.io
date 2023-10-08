@@ -23,7 +23,7 @@ img {
 }
 
 /* スマートフォン用のスタイル */
-@media screen and (max-width: 599px) { 
+@media (max-width: 599px) { 
     body {
         font-size: 24px; 
         color: aquamarine;
@@ -105,4 +105,48 @@ img {
     100% {
         transform: translate(2px, -2px);
     }
+}
+
+@keyframes rainbowText {
+    0% {
+        color: red;
+    }
+
+    14% {
+        color: orange;
+    }
+
+    28% {
+        color: yellow;
+    }
+
+    42% {
+        color: green;
+    }
+
+    57% {
+        color: blue;
+    }
+
+    71% {
+        color: indigo;
+    }
+
+    85% {
+        color: violet;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+#sasaki-chibi {
+    cursor: pointer;
+    transition: height 0.3s ease; /* アニメーションの設定 */
+}
+
+/* クリック時のスタイル */
+#sasaki-chibi.clicked {
+    height: 60px; /* 縦に60%縮小 */
 }
