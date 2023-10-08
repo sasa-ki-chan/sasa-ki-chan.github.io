@@ -25,11 +25,11 @@ img {
 /* スマートフォンやタブレット用のスタイル */
 @media (max-width: 768px) { /* 768px未満の場合に適用 */
     body {
-        font-size: 16px; /*フォントサイズを16pxに設定 */
+        font-size: 32px; /*フォントサイズを16pxに設定 */
     }
 
     h1 {
-        font-size: 24px; /*見出しのフォントサイズを24pxに設定 */
+        font-size: 48px; /*見出しのフォントサイズを24pxに設定 */
     }
 
     /* p {
@@ -38,8 +38,14 @@ img {
 
 
     .image-container {
-        width: 70%; /* 画像コンテナの幅を70%に設定 */
-        margin: 0 auto; /* 水平方向に中央に配置 */
+        max-width: 70%;
+        margin: auto; /* 水平方向に中央に配置 */
+        display: block;
+    }
+
+    .text-container {
+        white-space: nowrap; /* テキストが折り返さないように設定 */
+        overflow-wrap: break-word; /* 長い単語やURLがテキストボックス外にはみ出すのを防ぎ、適切に改行 */
     }
 }
 
