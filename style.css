@@ -20,6 +20,7 @@ img {
 
 /* スマートフォンやタブレット用のスタイル */
 @media (max-width: 768px) { /* 768px未満の場合に適用 */
+    font-size::after 18px;
     .image-container {
         width: 70%; /* 画像コンテナの幅を70%に設定 */
         margin: 0 auto; /* 水平方向に中央に配置 */
@@ -29,4 +30,9 @@ img {
 .scrolling-element {
     width: 100%; /* 画面幅に合わせる */
     overflow-x: hidden; /* 横スクロールを非表示に */
+}
+
+/* 他の要素のスタイルも調整 */
+.container {
+    padding: 10px; /* 例：コンテナ内の余白を調整 */
 }
