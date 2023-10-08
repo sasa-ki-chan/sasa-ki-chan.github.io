@@ -84,6 +84,10 @@ img {
     animation: vibrate 0.2s ease infinite;
 }
 
+.rainbow-text {
+    animation: rainbowText 8s linear infinite; /* アニメーションの速さと無限ループ */
+}
+
 /* リンクホバー時のエフェクト */
 @keyframes vibrate {
     0% {
