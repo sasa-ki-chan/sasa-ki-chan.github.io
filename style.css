@@ -26,6 +26,7 @@ img {
 @media screen and (max-width: 599px) { 
     body {
         font-size: 24px; 
+        color: aquamarine;
     }
 
     h1 {
@@ -66,6 +67,7 @@ img {
     display: flex; /* 横並びにする */
     justify-content: center; /* 中央に配置 */
     flex-wrap: nowrap; /* 横方向の折り返しを防止 */
+    font-size: 24px;
 }
 
 /* 各リンク */
@@ -74,7 +76,7 @@ img {
     color: black;
     margin: 20px; /* リンクの間隔を設定 */
     padding: 10px 20px; /* リンクのパディングを設定 */
-    border: 1px solid #000; /* ボーダーを追加 */
+    /*border: 1px solid #000;  ボーダーを追加 */
     position: relative;
 }
 
